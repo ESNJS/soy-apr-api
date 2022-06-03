@@ -1,0 +1,28 @@
+{
+  "name": "netlify-express",
+  "version": "0.0.1",
+  "description": "Example of how to deploy a Express.js Netlify app.",
+  "main": "functions/server.js",
+  "scripts": {
+    "build": "netlify-lambda build express",
+    "start": "nodemon server-local.js"
+  },
+  "keywords": [
+    "netlify",
+    "express.js"
+  ],
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "netlify-lambda": "^1.6.3",
+    "nodemon": "^1.19.4",
+    "serverless-http": "^2.3.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "jsonfile": "^6.1.0",
+    "web3-eth": "^1.7.3",
+    "web3-utils": "^1.7.3"
+  }
+}
