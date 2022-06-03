@@ -89,11 +89,8 @@ function setPrice (symbol, price) {
     priceList[symbol] = price
 }
 
-
-
-
 router.get('/',  (req, res) => {
-    jsonfile.readFile("./farmlist.json", async function (err, obj) {
+    jsonfile.readFile("../farmlist.json", async function (err, obj) {
         if (err) console.error(err)
 
         let list = await listFarmsAPR(obj.farmsInfo)
